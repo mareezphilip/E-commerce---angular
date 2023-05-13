@@ -1,0 +1,16 @@
+.box{
+    width: 90%;
+    margin: 100px auto;
+    height: 500px;
+}
+
+ul li{
+    font-size: 20px;
+    margin: 20px;
+}
+
+img{
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}

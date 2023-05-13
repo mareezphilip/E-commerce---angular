@@ -1,0 +1,24 @@
+
+<div class="box mt-5">
+ 
+    <div class="my-2 w-25" >
+        <label class="my-2"> Categories</label>
+        <select class="form-control" (change)="filterCategory($event)">
+            <option value="All" selected>All</option>
+            <option value="{{cat}}" *ngFor="let cat of categories "> {{cat}}</option>
+       
+        </select>
+
+    </div>
+ <div class="row" *ngIf="!load">
+    <div class="col-md-3 col-sm-12" *ngFor="let p of products" >
+     
+      <app-product [data]="p" (item)="addToCart($event)"></app-product>
+
+    </div>
+ </div>
+ <div class="text-center w-100" *ngIf="load">
+    <app-spinner></app-spinner>
+ </div>
+
+</div>

@@ -1,0 +1,28 @@
+.parent{
+    background-color: rgba(41, 52, 135, 0.05);
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+}
+h3{
+    color: rgba(34, 40, 86, 0.9);
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 20%;
+    margin: 0;
+}
+
+li{
+    cursor: pointer;
+    font-size: 22px;
+    color: rgba(34, 40, 86, 0.9);
+    text-decoration: none;
+}
+
